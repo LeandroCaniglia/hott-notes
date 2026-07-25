@@ -13,7 +13,7 @@ In Zermelo-Fraenkel set theory, equality is *extensional*: two sets are equal if
 
 Unifying these concepts requires a systematic approach. When characterizing the identity type for various basic types, a recurring five-step framework emerges, even if the HoTT book does not always label it explicitly. The process involves defining a base code, a transport mechanism, and the mutually quasi-inverse functions *encode* and *decode*. 
 
-By codifying an opaque path into a visible structure (encoding) and then reconstructing a path from its parts (decoding), we eliminate the mystery of the identity type. Applying this framework systematically reveals the elegant similarities between different types. For instance, the encoding for independent pairs\/ $A \times B$ simply maps paths using the standard `ap` function, whereas for dependent pairs (\/ $\Sigma$-types), the second coordinate naturally swaps `ap` for `apd` (the dependent version). Recognizing this framework transforms seemingly ad-hoc proofs into predictable, structural refactorings.
+By codifying an opaque path into a visible structure (encoding) and then reconstructing a path from its parts (decoding), we eliminate the mystery of the identity type. Applying this framework systematically reveals the elegant similarities between different types. For instance, the encoding for independent pairs $A \times B$ simply maps paths using the standard $\mathbf{ap}$ function, whereas for dependent pairs ($\Sigma$-types), the second coordinate naturally swaps $\mathbf{ap}$ for $\mathbf{apd}$ (the dependent version). Recognizing this framework transforms seemingly ad-hoc proofs into predictable, structural refactorings.
 
 ## The Trap of Literal Translation
 
