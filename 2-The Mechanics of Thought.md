@@ -17,9 +17,9 @@ HoTT tightens these screws. Because proofs are elements of the theory, the requi
 
 For instance, when trying to understand the equivalence of functions, HoTT defines a homotopy $f \sim g$ as a dependent type:
 
-\[
+\\[
 f \sim g :\equiv \prod_{x:A} (f(x) = g(x))
-\]
+\\]
 
 Reading and unpacking these expressions requires keeping track of binders, scopes, and universes. This requirement makes reading HoTT feel less like reading a textbook and more like playing the role of a compiler.
 
