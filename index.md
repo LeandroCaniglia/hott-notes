@@ -12,4 +12,6 @@ title: Reflections on a Journey Through HoTT
 * [The Geometry of Proof: Frameworks, Pullbacks, and Visualizing Complexity](4-The-geometry-of-proof.html)
 <!--* [The Verification Crisis and the Role of AI](5-The-verification-crisis.html)-->
 * [Constructivism, Choice, and the Ethics of Decision](6-Constructivism.html)
+* [ Writing as Self-Debugging - The Syntax of Thought](7-Writing-as-self-debugging.html)
+
 
