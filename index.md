@@ -3,7 +3,7 @@ layout: default
 title: Reflections on a Journey Through HoTT
 ---
 
-# Reflections on a Journey Through HoTT
+# Reflections on a Journey Through the HoTT Book
 
 ## Articles
 * [Culture Shock: First Impressions of the HoTT Book](1-culture-shock.html)
