@@ -9,7 +9,7 @@ It can be somewhat jarring when we first begin studying Homotopy Type Theory (Ho
 
 But then, how can we think about these entities that are subjected to a syntax the book introduces as it builds new types by combining more basic ones? Even though something tells us this is not the right path, the cultural baggage of thinking in terms of sets tempts us to interpret types as collections.
 
-A perspective more faithful to the idea of a type arises from recalling something we once discussed in this channel: pure mathematics has no concept of time. 
+A perspective more faithful to the idea of a type arises from recalling something I discussed with some friends: pure mathematics has no concept of time.
 
 Thought out carefully, this sort of epiphany leads us to recognize that it also lacks other physical notions like length or mass. 
 
