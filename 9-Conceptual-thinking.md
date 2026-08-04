@@ -5,7 +5,7 @@ title: The Role of Conceptual Thinking
 
 # The Role of Conceptual Thinking
 
-Now that I am thinking about the exercises in Chapter 4, I realize that something that had been hinted at until now becomes evident in this chapter.
+Now that I am working through the exercises in Chapter 4, I realize that something previously only hinted at has finally become evident.
 
 From the very beginning, the Book makes it clear that proofs in HoTT are functions. At first, what we do is construct those functions by following some route of more or less simple transformations of generic terms from the domain into terms in the codomain: $a \to a_1 \to \dots \to b$.
 
