@@ -2,7 +2,7 @@
 layout: default
 title: Culture Shock - First Impressions of the HoTT Book
 ---
-## **Culture Shock: First Impressions of the HoTT Book**
+# **Culture Shock: First Impressions of the HoTT Book**
 
 Approaching Homotopy Type Theory (HoTT) requires a certain level of mathematical maturity; to give meaning to the formalization of the theory, one must first pass through a naive approach to gain intuition about its underlying ideas. However, navigating this intuitive introduction is a demanding and tedious process, primarily because the exposition is riddled with gaps, ambiguities, and analogies.
 
