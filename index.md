@@ -14,5 +14,6 @@ title: Reflections on a Journey Through HoTT
 * [Constructivism, Choice, and the Ethics of Decision](6-Constructivism.html)
 * [ Writing as Self-Debugging - The Syntax of Thought](7-Writing-as-self-debugging.html)
 * [The Physics of Types - Magnitudes, Semantics, and Structure](8-The-physics-of-types.html)
+* [The Role of Conceptual Thinking](9-Conceptual-thinking.html)
 
 
