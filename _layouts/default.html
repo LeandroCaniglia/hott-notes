@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
 
   <link rel="icon" type="image/png" href="/hott-notes/images/Leandro.png">
@@ -89,6 +89,23 @@
     h1 {
       margin-top: 0;
       margin-bottom: 0.5rem; 
+    }
+
+    /* 5. Mobile Adjustments */
+    @media (max-width: 600px) {
+      /* Shrink the massive default title */
+      h1 {
+        font-size: 1.8em; 
+      }
+      /* Reduce gaps and font size in the nav bar */
+      .nav-content {
+        gap: 1rem;
+        padding: 1rem 15px;
+        justify-content: center; /* Centers items so they don't awkwardly wrap */
+      }
+      .top-nav a {
+        font-size: 0.85em;
+      }
     }
   </style>
 
