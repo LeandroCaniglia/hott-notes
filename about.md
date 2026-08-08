@@ -2,7 +2,11 @@
 layout: default
 title: About the Author
 ---
-
+<style>
+  .author-name {
+    display: none !important;
+  }
+</style>
 Leandro Caniglia is a mathematician, software engineer, and researcher with a deep-rooted passion for logic, algebra, and computation. 
 
 ### Academic Background
