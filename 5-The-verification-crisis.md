@@ -2,7 +2,6 @@
 layout: default
 title: The Verification Crisis and the Role of AI
 ---
-
 The intersection of mathematics and artificial intelligence is currently navigating a period of profound uncertainty. As large language models become increasingly capable of generating solutions to complex problems, the bottleneck in both mathematics and software development has shifted dramatically toward human verification. 
 
 AI companies have recently demonstrated the ability to formalize fields-level mathematics—such as Viazovska's sphere-packing theorem—by feeding the prior work of human mathematicians into proprietary autonomous agents. This milestone, however, sparked significant controversy within the formalization community. Prominent open-source developers warned that such aggressive, corporate-driven automation could turn the ecosystem into a "giant radioactive wasteland," effectively destroying the collaborative and educational benefits of formalization projects. 
