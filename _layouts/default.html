@@ -6,7 +6,74 @@
   
   <!-- The new theme stylesheet -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-  <!--<link rel="stylesheet" href="https://latex.vercel.app/style.css">-->
+
+  <style>
+    /* 1. Color Schemes (Light Mode Defaults) */
+    :root {
+      --background-body: #F4F3ED;
+      --nav-bg: #FF8000;
+      --author-color: #FF8000;
+      --heading-color: #008080;
+    }
+
+    /* 1. Color Schemes (Dark Mode Overrides) */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background-body: #1C1D23;
+        --nav-bg: #008080;
+        /* Keeping author orange in dark mode based on reference images */
+        --author-color: #FF8000; 
+      }
+    }
+
+    /* 4. Super Simple Nav Bar */
+    .top-nav {
+      /* Full bleed width trick to break out of water.css container */
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background-color: var(--nav-bg);
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      padding: 1.2rem 0;
+      margin-top: -20px; /* Counteracts default body padding */
+      margin-bottom: 2.5rem;
+    }
+
+    .top-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* 2. Colored Headings 2 and 3 */
+    h2, h3 {
+      color: var(--heading-color) !important;
+    }
+
+    /* 3. Author Name Styling */
+    .author-name {
+      color: var(--author-color);
+      font-weight: bold;
+      margin-top: -1.5rem;
+      margin-bottom: 2rem;
+      font-size: 0.9em;
+    }
+    
+    /* Removing default top margin from the title so it sits closer to the nav */
+    h1 {
+      margin-top: 0;
+    }
+  </style>
 
   <script>
     MathJax = {
@@ -19,6 +86,20 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
+  
+  <!-- 4. Navigation Links -->
+  <nav class="top-nav">
+    <a href="https://leandrocaniglia.github.io/hott-notes/">HoTT Reflections</a>
+    <a href="https://leandrocaniglia.github.io/hott-notes/">Articles Index</a>
+    <a href="https://leandrocaniglia.github.io/hott-notes/about">About the Author</a>
+  </nav>
+
+  <!-- 3. Title & Author Name -->
+  <!-- Note: This assumes you remove the # Title from your individual markdown files. -->
+  <h1>{{ page.title }}</h1>
+  <div class="author-name">by Leandro Caniglia</div>
+
+  <!-- Content rendered from Markdown[cite: 1] -->
   {{ content }}
 
   <br>
@@ -27,8 +108,8 @@
 
   <div>
     <h3>Welcome to HoTT Reflections</h3>
-    <p>Studying Homotopy Type Theory is not an easy task. My methodology consists of <a href="https://github.com/LeandroCaniglia/Type_Theory">rewriting the HoTT Book</a> in a more detailed way. Here I share some of the <a href="https://leandrocaniglia.github.io/hott-notes/">reflections</a> this process has triggered.</p>
-    <p>Leandro Caniglia</p>
+    <p>Studying Homotopy Type Theory is not an easy task. My methodology consists of <a href="https://github.com/LeandroCaniglia/Type_Theory">rewriting the HoTT Book</a> in a more detailed way. Here I share some of the <a href="https://leandrocaniglia.github.io/hott-notes/">reflections</a> this process has triggered.[cite: 1]</p>
+    <p>Leandro Caniglia[cite: 1]</p>
   </div>
 
   <hr>
@@ -44,7 +125,7 @@
     <input type="submit" value="Subscribe" style="font-size: inherit; padding: 0.6em 1.2em; height: auto;" />
     <p>
       <a href="https://buttondown.com/refer/caniglia" target="_blank">
-        Powered by Buttondown.
+        Powered by Buttondown.[cite: 1]
       </a>
     </p>
   </form>
