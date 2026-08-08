@@ -4,18 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
-
-  <link rel="icon" type="image/png" href="/hott-notes/assets/Leandro.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/hott-notes/assets/Leandro.png?v=3">
+  
   <!-- The new theme stylesheet -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 
   <style>
-    /* 1. Color Schemes (Light Mode Defaults) */
+    /* 1. Color Schemes & Link Overrides (Light Mode Defaults) */
     :root {
       --background-body: #F4F3ED;
       --nav-bg: #FF8000;
       --author-color: #FF8000;
       --heading-color: #008080;
+      --links: #FF8000; /* Overrides water.css default link color */
     }
 
     /* 1. Color Schemes (Dark Mode Overrides) */
@@ -24,9 +27,15 @@
         --background-body: #1C1D23;
         --nav-bg: #008080;
         --author-color: #FF8000; 
+        --links: #FF8000; /* Keeps links orange in dark mode */
       }
     }
 
+    /* 6. General Link Styles (Fallback) */
+    a {
+      color: var(--links);
+    }
+    
     /* 4. Super Simple Nav Bar - Full Width Background */
     .top-nav {
       width: 100vw;
@@ -51,7 +60,7 @@
     }
 
     .top-nav a {
-      color: white;
+      color: white; /* Forces nav links to stay white */
       text-decoration: none;
       font-weight: 600;
       font-family: system-ui, -apple-system, sans-serif;
@@ -93,15 +102,13 @@
 
     /* 5. Mobile Adjustments */
     @media (max-width: 600px) {
-      /* Shrink the massive default title */
       h1 {
         font-size: 1.8em; 
       }
-      /* Reduce gaps and font size in the nav bar */
       .nav-content {
         gap: 1rem;
         padding: 1rem 15px;
-        justify-content: center; /* Centers items so they don't awkwardly wrap */
+        justify-content: center; 
       }
       .top-nav a {
         font-size: 0.85em;
@@ -126,7 +133,7 @@
     <div class="nav-content">
       <a href="https://leandrocaniglia.github.io/hott-notes/">HoTT Reflections</a>
       <a href="https://leandrocaniglia.github.io/hott-notes/">Articles Index</a>
-      <a href="https://leandrocaniglia.github.io/hott-notes/about">About the Author</a>
+      <a href="https://leandrocaniglia.github.io/hott-notes/about.html">About the Author</a>
     </div>
   </nav>
 
