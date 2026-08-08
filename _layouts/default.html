@@ -34,16 +34,16 @@
       margin-left: -50vw;
       margin-right: -50vw;
       background-color: var(--nav-bg);
-      margin-top: -20px; /* Counteracts default body padding */
+      margin-top: -20px; 
       margin-bottom: 2.5rem;
     }
 
     /* Aligns the nav items with the content body */
     .nav-content {
-      max-width: 800px; /* Matches water.css default content width */
+      max-width: 800px; 
       margin: 0 auto;
       display: flex;
-      justify-content: flex-start; /* Aligns first item to the left */
+      justify-content: flex-start; 
       gap: 4rem;
       padding: 1.2rem 20px;
     }
@@ -64,19 +64,29 @@
       color: var(--heading-color) !important;
     }
 
-    /* 3. Author Name Styling */
+    /* 3. Author Name & Avatar Styling */
     .author-name {
       color: var(--author-color);
-      font-weight: normal; /* Removed bold */
-      margin-top: -0.2rem; /* Increased spacing between title and author */
+      font-weight: normal; 
+      margin-top: -0.2rem; 
       margin-bottom: 2.5rem;
       font-size: 0.9em;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .author-avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      object-fit: cover;
     }
     
     /* Removing default top margin from the title so it sits closer to the nav */
     h1 {
       margin-top: 0;
-      margin-bottom: 0.5rem; /* Helps control the spacing to the author name */
+      margin-bottom: 0.5rem; 
     }
   </style>
 
@@ -101,9 +111,12 @@
     </div>
   </nav>
 
-  <!-- 3. Title & Author Name -->
+  <!-- 3. Title, Avatar & Author Name -->
   <h1>{{ page.title }}</h1>
-  <div class="author-name">by Leandro Caniglia</div>
+  <div class="author-name">
+    <img src="Mask group.png" alt="Leandro Caniglia" class="author-avatar">
+    by Leandro Caniglia
+  </div>
 
   <!-- Content rendered from Markdown -->
   {{ content }}
