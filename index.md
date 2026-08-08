@@ -3,9 +3,11 @@ layout: default
 title: Reflections on a Journey Through HoTT
 ---
 <style>
-  /* Forces all links on this specific page to be white */
   a {
     color: white !important;
+  }
+  .author-name {
+    display: none !important;
   }
 </style>
 ## Articles
