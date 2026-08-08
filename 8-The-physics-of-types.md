@@ -3,8 +3,6 @@ layout: default
 title: The Physics of Types - Magnitudes, Semantics, and Structure
 ---
 
-# The Physics of Types: Magnitudes, Semantics, and Structure
-
 It can be somewhat jarring when we first begin studying Homotopy Type Theory (HoTT) to realize that the book does not provide a definition of a type. While there are ways to define types formally, starting there is not considered pedagogically convenient. 
 
 But then, how can we think about these entities that are subjected to a syntax the book introduces as it builds new types by combining more basic ones? Even though something tells us this is not the right path, the cultural baggage of thinking in terms of sets tempts us to interpret types as collections.
