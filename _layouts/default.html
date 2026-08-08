@@ -21,14 +21,12 @@
       :root {
         --background-body: #1C1D23;
         --nav-bg: #008080;
-        /* Keeping author orange in dark mode based on reference images */
         --author-color: #FF8000; 
       }
     }
 
-    /* 4. Super Simple Nav Bar */
+    /* 4. Super Simple Nav Bar - Full Width Background */
     .top-nav {
-      /* Full bleed width trick to break out of water.css container */
       width: 100vw;
       position: relative;
       left: 50%;
@@ -36,12 +34,18 @@
       margin-left: -50vw;
       margin-right: -50vw;
       background-color: var(--nav-bg);
-      display: flex;
-      justify-content: center;
-      gap: 4rem;
-      padding: 1.2rem 0;
       margin-top: -20px; /* Counteracts default body padding */
       margin-bottom: 2.5rem;
+    }
+
+    /* Aligns the nav items with the content body */
+    .nav-content {
+      max-width: 800px; /* Matches water.css default content width */
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-start; /* Aligns first item to the left */
+      gap: 4rem;
+      padding: 1.2rem 20px;
     }
 
     .top-nav a {
@@ -63,15 +67,16 @@
     /* 3. Author Name Styling */
     .author-name {
       color: var(--author-color);
-      font-weight: bold;
-      margin-top: -1.5rem;
-      margin-bottom: 2rem;
+      font-weight: normal; /* Removed bold */
+      margin-top: -0.2rem; /* Increased spacing between title and author */
+      margin-bottom: 2.5rem;
       font-size: 0.9em;
     }
     
     /* Removing default top margin from the title so it sits closer to the nav */
     h1 {
       margin-top: 0;
+      margin-bottom: 0.5rem; /* Helps control the spacing to the author name */
     }
   </style>
 
@@ -89,17 +94,18 @@
   
   <!-- 4. Navigation Links -->
   <nav class="top-nav">
-    <a href="https://leandrocaniglia.github.io/hott-notes/">HoTT Reflections</a>
-    <a href="https://leandrocaniglia.github.io/hott-notes/">Articles Index</a>
-    <a href="https://leandrocaniglia.github.io/hott-notes/about">About the Author</a>
+    <div class="nav-content">
+      <a href="https://leandrocaniglia.github.io/hott-notes/">HoTT Reflections</a>
+      <a href="https://leandrocaniglia.github.io/hott-notes/">Articles Index</a>
+      <a href="https://leandrocaniglia.github.io/hott-notes/about">About the Author</a>
+    </div>
   </nav>
 
   <!-- 3. Title & Author Name -->
-  <!-- Note: This assumes you remove the # Title from your individual markdown files. -->
   <h1>{{ page.title }}</h1>
   <div class="author-name">by Leandro Caniglia</div>
 
-  <!-- Content rendered from Markdown[cite: 1] -->
+  <!-- Content rendered from Markdown -->
   {{ content }}
 
   <br>
@@ -108,8 +114,8 @@
 
   <div>
     <h3>Welcome to HoTT Reflections</h3>
-    <p>Studying Homotopy Type Theory is not an easy task. My methodology consists of <a href="https://github.com/LeandroCaniglia/Type_Theory">rewriting the HoTT Book</a> in a more detailed way. Here I share some of the <a href="https://leandrocaniglia.github.io/hott-notes/">reflections</a> this process has triggered.[cite: 1]</p>
-    <p>Leandro Caniglia[cite: 1]</p>
+    <p>Studying Homotopy Type Theory is not an easy task. My methodology consists of <a href="https://github.com/LeandroCaniglia/Type_Theory">rewriting the HoTT Book</a> in a more detailed way. Here I share some of the <a href="https://leandrocaniglia.github.io/hott-notes/">reflections</a> this process has triggered.</p>
+    <p>Leandro Caniglia</p>
   </div>
 
   <hr>
@@ -125,7 +131,7 @@
     <input type="submit" value="Subscribe" style="font-size: inherit; padding: 0.6em 1.2em; height: auto;" />
     <p>
       <a href="https://buttondown.com/refer/caniglia" target="_blank">
-        Powered by Buttondown.[cite: 1]
+        Powered by Buttondown.
       </a>
     </p>
   </form>
