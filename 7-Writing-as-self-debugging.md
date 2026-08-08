@@ -3,8 +3,6 @@ layout: default
 title: Writing as Self-Debugging - The Syntax of Thought
 ---
 
-# Writing as Self-Debugging: The Syntax of Thought
-
 There is a profound connection between the physical act of writing and the cognitive process of understanding. Writing is like squirting dish soap on a tire: it makes the hidden leaks and holes in our reasoning blindingly obvious. Writing is not merely documentation; it is a vital mechanism for self-debugging.
 
 This reality becomes painfully clear when attempting to formalize mathematics in Type Theory. Human parsing limits are severely tested by the need to construct mental Abstract Syntax Trees (ASTs) from linear, one-dimensional text. In traditional mathematical notation, natural language connectors—like "then" or "it follows that"—separate hypotheses from conclusions, providing structural rest stops for the mind. In HoTT, these logical implications must be expressed strictly as functions, collapsing the vertical structure of a deductive argument into a dense, horizontal string of symbols.
