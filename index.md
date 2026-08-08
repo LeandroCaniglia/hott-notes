@@ -3,8 +3,10 @@ layout: default
 title: Reflections on a Journey Through HoTT
 ---
 <style>
-  a {
-    color: white !important;
+ @media (prefers-color-scheme: dark) {
+    a {
+      color: white !important;
+    }
   }
   .author-name {
     display: none !important;
