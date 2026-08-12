@@ -3,8 +3,6 @@ layout: default
 title: Constructivism, Choice, and the Ethics of Decision
 ---
 
-# Constructivism, Choice, and the Ethics of Decision
-
 Transitioning from classical mathematics to Homotopy Type Theory requires adopting a constructive, intuitionistic mindset. In this framework, the Law of Excluded Middle is not a universal truth but a specific axiom that must be explicitly added if classical logic is desired. This shift forces us to reevaluate foundational principles, particularly the Axiom of Choice.
 
 In classical Zermelo-Fraenkel set theory (ZFC), the Axiom of Choice is highly permissive, allowing for arbitrary selections from collections without requiring a specific constructible rule. From the perspective of decision theory, this models a pure "choice"—a capricious, unreflective action taken without a comparative analysis of consequences or alternative paths. 

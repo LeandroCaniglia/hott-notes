@@ -2,9 +2,6 @@
 layout: default
 title: The Architecture of Types - Judgments, Opacity, and Paths
 ---
-
-# The Architecture of Types: Judgments, Opacity, and Paths
-
 When transitioning from classical mathematics to Type Theory, one of the most significant hurdles is abandoning the intuitive comfort of Set Theory. We are used to thinking of a set as a collection of items. Type Theory demands a more syntactic approach: a type is a primitive notion defined entirely by the rules that govern it—how to construct its elements and how to compute with them. 
 
 This shift from semantics to syntax fundamentally alters how we perceive mathematical truth, abstraction, and even equality.

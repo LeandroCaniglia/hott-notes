@@ -2,9 +2,6 @@
 layout: default
 title: The Geometry of Proof - Frameworks, Pullbacks, and Visualizing Complexity
 ---
-
-# The Geometry of Proof: Frameworks, Pullbacks, and Visualizing Complexity
-
 As one delves deeper into Homotopy Type Theory, the sheer density of the formalism can easily obscure the underlying mathematical landscape. The theory is rigorous and expressive, but without a guiding structure, the reader risks drowning in an alphabet soup of dependent types, quantifiers, and paths. 
 
 ## The Encode-Decode Framework

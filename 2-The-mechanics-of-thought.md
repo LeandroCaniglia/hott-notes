@@ -2,9 +2,6 @@
 layout: default
 title: The Mechanics of Thought - Proofs as Objects and the Limits of Human Parsing
 ---
-
-# The Mechanics of Thought: Proofs as Objects and the Limits of Human Parsing
-
 In classical mathematics, a proof is primarily a communication device—a persuasive narrative designed to convince the reader that a particular statement is true. Homotopy Type Theory (HoTT) forces a radical shift in this perspective: a proof is no longer a meta-linguistic explanation but a first-class mathematical object. Specifically, a proof is a function that transforms a witness of the hypotheses into a witness of the thesis.
 
 While this unification of logic and structure is incredibly elegant, it exposes the limits of how we traditionally process mathematical texts.

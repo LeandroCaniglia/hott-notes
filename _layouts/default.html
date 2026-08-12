@@ -2,11 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/hott-notes/assets/Leandro.png?v=3">
   
   <!-- The new theme stylesheet -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-  <!--<link rel="stylesheet" href="https://latex.vercel.app/style.css">-->
+
+  <style>
+    /* 1. Color Schemes & Link Overrides (Light Mode Defaults) */
+    :root {
+      --background-body: #F4F3ED;
+      --nav-bg: #FF8000;
+      --author-color: #FF8000;
+      --heading-color: #008080;
+      --links: #FF8000; /* Overrides water.css default link color */
+    }
+
+    /* 1. Color Schemes (Dark Mode Overrides) */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background-body: #1C1D23;
+        --nav-bg: #008080;
+        --author-color: #FF8000; 
+        --links: #FF8000; /* Keeps links orange in dark mode */
+      }
+       .top-nav a {
+      color: #1C1D23!important; /* Forces nav links to stay white */
+    }}
+
+    /* 6. General Link Styles (Fallback) */
+    a {
+      color: var(--links);
+    }
+    
+    /* 4. Super Simple Nav Bar - Full Width Background */
+    .top-nav {
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background-color: var(--nav-bg);
+      margin-top: -20px; 
+      margin-bottom: 2.5rem;
+    }
+
+    /* Aligns the nav items with the content body */
+    .nav-content {
+      max-width: 800px; 
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-start; 
+      gap: 4rem;
+      padding: 1.2rem 20px;
+    }
+
+    .top-nav a {
+      color: white; /* Forces nav links to stay white */
+      text-decoration: none;
+      font-weight: 600;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* 2. Colored Headings 2 and 3 */
+    h2, h3 {
+      color: var(--heading-color) !important;
+    }
+
+    /* 3. Author Name & Avatar Styling */
+    .author-name {
+      color: var(--author-color);
+      font-weight: normal; 
+      margin-top: -0.2rem; 
+      margin-bottom: 2.5rem;
+      font-size: 0.9em;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .author-avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    /* Removing default top margin from the title so it sits closer to the nav */
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0.5rem; 
+    }
+
+    /* 5. Mobile Adjustments */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em; 
+      }
+      .nav-content {
+        gap: 1rem;
+        padding: 1rem 15px;
+        justify-content: center; 
+      }
+      .top-nav a {
+        font-size: 0.85em;
+      }
+    }
+  </style>
 
   <script>
     MathJax = {
@@ -19,6 +129,24 @@
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
+  
+  <!-- 4. Navigation Links -->
+  <nav class="top-nav">
+    <div class="nav-content">
+      <a href="https://github.com/LeandroCaniglia/Type_Theory/">HoTT Book Rewrite</a>
+      <a href="https://leandrocaniglia.github.io/hott-notes/">Articles Index</a>
+      <a href="https://leandrocaniglia.github.io/hott-notes/about.html">About the Author</a>
+    </div>
+  </nav>
+
+  <!-- 3. Title, Avatar & Author Name -->
+  <h1>{{ page.title }}</h1>
+  <div class="author-name">
+    <img src="/hott-notes/assets/Leandro.png" alt="Leandro Caniglia" class="author-avatar">
+    by Leandro Caniglia
+  </div>
+
+  <!-- Content rendered from Markdown -->
   {{ content }}
 
   <br>
