@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Mechanical Verification and Hidden Dependencies: The Case of UA and FE
+title: Mechanical Verification and Hidden Dependencies. The Case of UA and FE
 ---
+
 I finally embarked on the (exhausting) task of tagging all the results that depend on the function extensionality (FE) axiom. What ultimately convinced me that I had to do it was an exercise in Chapter 4 that defines a seemingly equivalent variant of the univalence axiom (UA), which actually implies it, but is bogus. That is, if it were added as an axiom, it would lead to a contradiction.
 
 I did this with the help of the imakeidx LaTeX package, which allowed me to implement my idea of tagging the results that depend on FE. For that, I simply need to add the \fe command to each result that requires it (\begin{thm}\fe, \begin{lem}\fe, etc.). With that package, I was able to compile an index of all those dependencies. My macro also makes the tag visible. Although it was a crazy amount of work, I am happy to have done it because making that explicit seems like a great help to understand things a bit more deeply.
