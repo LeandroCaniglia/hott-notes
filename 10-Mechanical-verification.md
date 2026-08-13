@@ -6,6 +6,8 @@ I finally embarked on the (exhausting) task of tagging all the results that depe
 
 I did this with the help of the imakeidx LaTeX package, which allowed me to implement my idea of tagging the results that depend on FE. For that, I simply need to add the \fe command to each result that requires it (\begin{thm}\fe, \begin{lem}\fe, etc.). With that package, I was able to compile an index of all those dependencies. My macro also makes the tag visible. Although it was a crazy amount of work, I am happy to have done it because making that explicit seems like a great help to understand things a bit more deeply.
 
+![FE tag](/assets/Fe-tag.png)
+
 And from this, something interesting emerged. When I decided that, to be sure the proof of UA ⇒ FE was correct, I built the reference tree of the proof and "verified" that those references did not use FE. How did I do it? I visited the leaves of the tree and made sure they didn't use FE. With that, I considered myself satisfied.
 
 Now that I have all the results using FE tagged, I started a second verification: I had to check that no leaf was on the list. And shortly after starting, I found out it was wrong! I mean, I was using results (in the plural) that depend on FE! This, which slipped past me with the first method, became evident with the second.
