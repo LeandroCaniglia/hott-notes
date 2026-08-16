@@ -23,6 +23,8 @@ title: Reflections on a Journey Through HoTT
 * [The Physics of Types - Magnitudes, Semantics, and Structure](8-The-physics-of-types.html)
 * [The Role of Conceptual Thinking](9-Conceptual-thinking.html)
 * [Mechanical Verification and Hidden Dependencies: The Case of UA and FE](10-Mechanical-verification.html)
+* [More Than an Allegory: The Working Logic of HoTT](11-More-than-allegory.html)
+
 
 
 
