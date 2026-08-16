@@ -1,6 +1,6 @@
 ---
 layout: default
-title: More Than an Allegory: The Working Logic of HoTT
+title: More Than an Allegory. The Working Logic of HoTT
 ---
 
 When we think about the logical interpretation of HoTT, types take on the role of properties, and the inhabitants of those types take on the role of proofs of their validity. When considering this for the first time, we think of the type $P$ as an abstract (opaque) property, and of an element $p : P$ as an equally abstract proof. That is to say, it seems like nothing more than an allegory that helps us think using our intuition. Of course, there are other equally useful interpretations, such as the topological one, where a type is viewed as a space and its terms as points in that space, etc.
