@@ -3,7 +3,7 @@ layout: default
 title: A Final Reflection on Tags and Dependency Trees
 ---
 
-As I have explained, to prove that UA $\Rightarrow$ FE, we first show that UA $\Rightarrow$ WE and then that WE $\Rightarrow$ FE. The problem is that these two theorems rely on others, which in turn rely on others, and so on. Furthermore, those preliminary results were proven without paying special attention to which axioms they used.
+As I have explained, to prove that UA $\Rightarrow$ FE, we first show that UA $\Rightarrow$ WE (weak extensionality) and then that WE $\Rightarrow$ FE. The problem is that these two theorems rely on others, which in turn rely on others, and so on. Furthermore, those preliminary results were proven without paying special attention to which axioms they used.
 
 The dependency tree of each of the two main theorems acts much like a frozen execution stack. Seeing exactly where the axioms are used is akin to inspecting the classes of the objects instantiated in the stack. In our case, we have two stacks: one for UA $\Rightarrow$ WE and another for WE $\Rightarrow$ FE. For the purposes of the theorem, having these two stacks visible is enough: we review each of their frames and verify that neither used FE. In the case of the second theorem, FE was actually used, but those proofs can be modified to use WE instead, making everything perfectly sound.
 
