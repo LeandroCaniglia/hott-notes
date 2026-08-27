@@ -25,6 +25,7 @@ title: Reflections on a Journey Through HoTT
 * [Mechanical Verification and Hidden Dependencies: The Case of UA and FE](10-Mechanical-verification.html)
 * [More Than an Allegory: The Working Logic of HoTT](11-More-than-allegory.html)
 * [A Final Reflection on Tags and Dependency Trees](12-Tags-and-dependencies.html)
+* [What Does Induction Mean?](13-Induction-meaning.html)
 
 
 
