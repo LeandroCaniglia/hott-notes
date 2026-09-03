@@ -26,6 +26,8 @@ title: Reflections on a Journey Through HoTT
 * [More Than an Allegory: The Working Logic of HoTT](11-More-than-allegory.html)
 * [A Final Reflection on Tags and Dependency Trees](12-Tags-and-dependencies.html)
 * [What Does Induction Mean?](13-Induction-meaning.html)
+* [Beyond Simple Induction. W-Types and the Sum-Product Analogy](14-Beyond-induction.html)
+
 
 
 
