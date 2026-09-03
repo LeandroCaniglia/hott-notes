@@ -1,6 +1,6 @@
 ---
 layout: default
-tile: Beyond Simple Induction. W-Types and the Sum-Product Analogy
+title: Beyond Simple Induction. W-Types and the Sum-Product Analogy
 ---
 
 Sections 5.5, 5.6, and 5.7 of the HoTT book seemed to me the weakest part of what I have studied so far. They are complicated, excessively wordy, and not very well defined in their objectives. It is a pity, because up to that point, the chapter was progressing very well. What I did then was work with Gemini (and Notebook) to try to understand and clarify some things that, apparently, are good to know before tackling Chapter 6.
