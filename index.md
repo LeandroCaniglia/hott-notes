@@ -27,6 +27,7 @@ title: Reflections on a Journey Through HoTT
 * [A Final Reflection on Tags and Dependency Trees](12-Tags-and-dependencies.html)
 * [What Does Induction Mean?](13-Induction-meaning.html)
 * [Beyond Simple Induction. W-Types and the Sum-Product Analogy](14-Beyond-induction.html)
+* [A Categorical Shift. Why Path Induction Makes Sense](15-Categorical-shift.html)
 
 
 
