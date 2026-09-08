@@ -3,4 +3,4 @@
 
 [Click here to read the compiled PDF](Type_Theory.pdf)
 
-[Homotopy Type Theory Project](Type_Theory)
+[Homotopy Type Theory Project]([Type_Theory](https://github.com/LeandroCaniglia/Type_Theory)
