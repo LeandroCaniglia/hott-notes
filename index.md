@@ -28,6 +28,7 @@ title: Reflections on a Journey Through HoTT
 * [What Does Induction Mean?](13-Induction-meaning.html)
 * [Beyond Simple Induction. W-Types and the Sum-Product Analogy](14-Beyond-induction.html)
 * [A Categorical Shift. Why Path Induction Makes Sense](15-Categorical-shift.html)
+* [The Literature of Symbols. Beauty and Type Theory](16-Literature-of-symbols.html)
 
 
 
